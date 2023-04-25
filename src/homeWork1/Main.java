@@ -1,6 +1,6 @@
 package homeWork1;
 
-public class Main { public static void main(String[] args) {
+//public class Main { public static void main(String[] args) {
 
 //        Exit exit = new Exit();
 //        exit.ConsolInput();
@@ -14,7 +14,7 @@ public class Main { public static void main(String[] args) {
 //          Seasons seasons = new Seasons();
 //          seasons.test();
 
-    Sum sum = new Sum();
-    sum.test();
-}
-}
+////    Sum sum = new Sum();
+////    sum.test();
+////}
+//}

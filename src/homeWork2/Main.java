@@ -6,8 +6,8 @@ public class Main {
         Fibonacci fib = new Fibonacci();
         fib.fib(8);
 
-        Difference difference = new Difference();
-        difference.diff();
+//        Difference difference = new Difference();
+//        difference.diff();
     }
 }
 
