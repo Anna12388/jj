@@ -1,14 +1,23 @@
-import homeWork3.seasons.CheckSeasons;
-import homeWork3.seasons.MONTH;
+package homeWork3;
+
+import homeWork3.arrays.ArraysMethods;
+import homeWork3.user.USER;
 
 public class Main {
     public static void main(String[] args) {
-        CheckSeasons checkSeasons = new CheckSeasons();
-        checkSeasons.checkSeasons(MONTH.AUGUST);
+//        int[] arr = {23, 7868, 99};
 
-        USER user = USER.USER2;
-        user.printNameAndLastname();
-            }
-        }
 
+//        CheckSeasons checkSeasons = new CheckSeasons();
+//        checkSeasons.checkSeasons(MONTH.SEPTEMBER);
+
+//        ArraysMethods arraysMethods = new ArraysMethods();
+////        arraysMethods.printSortArray(arr);
+//        arraysMethods.printMaxValue(arr);
+
+         USER user = USER.USER3;
+         user.printNameAndLastname();
+         user.upAge( 7);
+    }
+}
 
