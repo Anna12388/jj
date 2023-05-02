@@ -1,9 +1,24 @@
 package homeWork4;
+
+import java.util.Arrays;
+
 public abstract class Employee extends Person {
 
     private int exp;
     protected PROF prof;
     private int basic = 1000;
+
+    Employee[] employees;
+
+    public void addWorker(Employee employee) {
+        if(employees==null) {
+            employees = new Employee[1];
+            employees[0] = employee;
+        }else {
+            employees = Arrays.copyOf(employees,employees.length+1);
+            employees[employees.length-1] = employee;
+        }
+    }
 
     public Employee(String name, String surname, int exp) {
         super(name, surname);

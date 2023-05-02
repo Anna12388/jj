@@ -7,6 +7,7 @@ public class Main {
         Employee worker2 = new Worker("W2", "WS2", 2);
         Employee worker3 = new Worker("W3", "WS3", 3);
         Employee worker4 = new Worker("W4", "WS4", 4);
+        Employee worker5 = new Trainee("T5", "TS5", 1);
 
         Employee director1 = new Director("D1", "DS1", 1 );
         Employee director2 = new Director("D2", "DS2", 2);
@@ -18,9 +19,9 @@ public class Main {
         ((Director)director2).addWorker(worker4);
 
         ((Director)director1).addWorker(director2);
-
+        ((Worker)worker4).addWorker(worker5);
+        
         System.out.println(director1);
 
     }
-
 }
