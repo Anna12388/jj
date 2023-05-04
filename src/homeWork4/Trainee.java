@@ -1,5 +1,7 @@
 package homeWork4;
 
+import java.util.Arrays;
+
 public class Trainee extends Employee {
 
     public Trainee(String name, String surname, int exp) {
@@ -8,6 +10,15 @@ public class Trainee extends Employee {
 
     @Override
     public void setProf() {
+
         this.prof = PROF.TRAINEE;
+    }
+    @Override
+    public String toString() {
+        return "Trainee{" +
+                ", prof=" + prof +
+                ", salary=" + getSalary() +
+                " employees=" + Arrays.toString(employees) +
+                '}';
     }
 }

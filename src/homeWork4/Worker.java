@@ -16,12 +16,20 @@ public class Worker extends Employee {
 
     @Override
     public void addWorker(Employee employee) {
-
-        if (employee == employee) {
+        if (employee.prof.equals(PROF.TRAINEE)) {
             super.addWorker(employee);
-        else{
-                System.out.printf("Можно нанимать только стажеров");
-            }
+        } else {
+            System.out.printf("Можно добавлять только стажеров");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Worker{" +
+                ", prof=" + prof +
+                ", salary=" + getSalary() +
+                " employees=" + Arrays.toString(employees) +
+                '}';
+    }
 }
+
