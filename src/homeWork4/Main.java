@@ -10,6 +10,7 @@ public class Main {
         Employee worker3 = new Worker("W3", "WS3", 3);
         Employee worker4 = new Worker("W4", "WS4", 4);
         Employee trainee1 = new Trainee("T1","TS1",1);
+        Employee cleaner = new Cleaner("C1", "C2", 2);
 
         Employee director1 = new Director("D1", "DS1", 1 );
         Employee director2 = new Director("D2", "DS2", 2);
@@ -24,7 +25,7 @@ public class Main {
         
         worker1.addWorker(trainee1);
 
-        PrintStream printf = System.out.printf(worker1.toString());
+        System.out.println(cleaner.getSalary());
 
     }
 }
