@@ -10,6 +10,10 @@ public abstract class Employee extends Person {
 
     Employee[] employees;
 
+    public Employee[] getEmployees() {
+        return employees;
+    }
+
     public void addWorker(Employee employee) {
         if(employees==null) {
             employees = new Employee[1];

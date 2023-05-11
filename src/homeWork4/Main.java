@@ -2,6 +2,8 @@ package homeWork4;
 
 import java.io.PrintStream;
 
+import static java.lang.System.*;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -25,7 +27,11 @@ public class Main {
         
         worker1.addWorker(trainee1);
 
-        System.out.println(cleaner.getSalary());
+        Service service = new Service();
+
+        out.println(service.find(worker1,"T1"));
+
+
 
     }
 }
